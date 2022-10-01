@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>MAALF</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light py-1 fixed-top" style="background-color: #e3f2fd;" >
+      <a class="navbar-brand" href="#">
+        <h2>maalf</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <i class=style "color : black"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item">
+            <a class="nav-link1" href="#">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#">Browse Jobs</a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+          <button class="btn btn-sm col-xs-2 margin-left" type="submit"><b>Login</b></button>
+          <button class="btn btn-sm col-xs-2 margin-left" type="submit"><b>Sign up</b></button>
+          <button type="button" id="btn1" class="btn btn-sm col-xs-2 margin-left"><b>Post a Project</b></button>
+        </form>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navbar2">
+      <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Find Jobs</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">By Skill</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Find Graphic Design Jobs</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Find Logo Design Jobs</a></li>
+                      <li><a class="dropdown-item" href="#">Find Web Design Jobs</a></li>
+                      <li><a class="dropdown-item" href="#">Find Banner Design Jobs</a></li>
+                      <li><a class="dropdown-item" href="#">Find Illustration Jobs</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Find Writing Jobs</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Find Copywriting Jobs</a></li>
+                      <li><a class="dropdown-item" href="#">Find Ghostwriting Jobs</a></li>
+                      <li><a class="dropdown-item" href="#">Find Other Writing Jobs</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Find Legal Jobs</a></li>
+                </ul>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">By Language</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Find Freelance Job in English</a></li>
+                  <li><a class="dropdown-item" href="#">Find Freelance Job in Spanish</a></li>
+                  <li><a class="dropdown-item" href="#">Find Freelance Job in French</a></li>
+                  <li><a class="dropdown-item" href="#">Find Freelance Job in Chinese</a></li>
+                </ul>
+              </li>
+              <ul class="dropdown-menu"></ul>
+              <li><a class="dropdown-item" href="#">Featured Jobs</a></li>
+          </li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hire Freelancer</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">By Skill</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Hire Graphic Designers</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Hire Photoshop Designers</a></li>
+                    <li><a class="dropdown-item" href="#">Hire 3D Animators</a></li>
+                    <li><a class="dropdown-item" href="#">Hire Packaging Designers</a></li>
+                    <li><a class="dropdown-item" href="#">FHire Fashion Designers</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Hire Software Developers</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Hire C++ Software Developers</a></li>
+                    <li><a class="dropdown-item" href="#">Hire Linux Software Developers</a></li>
+                    <li><a class="dropdown-item" href="#">Hire Database Software Developers</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Hire Lawyers</a></li>
+                <li><a class="dropdown-item" href="#">Hire Seo Specialist</a></li>
+                <li><a class="dropdown-item" href="#">Hire Data Entry Clerks</a></li>
+              </ul>
+            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">By Location</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hire Freelancers in Canada</a></li>
+                <li><a class="dropdown-item" href="#">Hire Freelancers in Bangladesh</a></li>
+                <li><a class="dropdown-item" href="#">Hire Freelancers in Turkey</a></li>
+                <li><a class="dropdown-item" href="#">Hire Freelancers in the United Kingdom</a></li>
+              </ul>
+            </li>
+            <ul class="dropdown-menu"></ul>
+            <li><a class="dropdown-item" href="#">Skill Categories</a></li>
+        </li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Ideas</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu"></ul>
+            <li><a class="dropdown-item" href="#">Get Web Design Ideas</a></li>
+            <li><a class="dropdown-item" href="#">Get Wordpress Ideas</a></li>
+            <li><a class="dropdown-item" href="#">Get Illustration Ideas</a></li>
+            <li><a class="dropdown-item" href="#">Get Product Design Ideas</a></li>
+            <li><a class="dropdown-item" href="#">Get Branding Ideas</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu"></ul>
+            <li><a class="dropdown-item" href="#">Enterprise</a></li>
+            <li><a class="dropdown-item" href="#">Membership</a></li>
+            <li><a class="dropdown-item" href="#">Preferred Freelancer Program</a></li>
+            <li><a class="dropdown-item" href="#">Get Verified</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu"></ul>
+            <li><a class="dropdown-item" href="#">What is Adobe Photoshop</a></li>
+            <li><a class="dropdown-item" href="#">What is HTML</a></li>
+            <li><a class="dropdown-item" href="#">What is Internet Marketing</a></li>
+            <li><a class="dropdown-item" href="#">What is PHP</a></li>
+            <li><a class="dropdown-item" href="#">What is Web Design</a></li>
+          </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <video poster="poster.jpg" autoplay playsinline muted loop>
+        <source src="images/video.mp4" type="video/mp4">
+      </video>
+      <div class="home">
+        <div class="title mx-2">
+          <h1>Hire the best freelancers for any job, online.</h1>
+          <h3>Millions of people use freelancer.com to turn their ideas into reality.</h3>
+        </div>
+        <div class="hirebutton mx-5 px-5">
+          <button class="button1" type="button"><span></span>Hire a Freelancer</button>
+          <button class="button1" type="button"><span></span>Earn Money Freelancing</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="needjob">
+      <div class="navbarbottom text-center">
+        <h3 class="mt-5">As used by
+        <a href="#amazon" class="active">
+          <img src="https://germainmaureau.com/app/uploads/2020/05/Amazon-logo.png" , width=px, height="40px">
+        </a>
+        <a href="#facebook">
+          <img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19764.png" , width=px, height="40px">
+        </a>
+        <a href="#deloitte">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Deloitte_Logo.png/1200px-Deloitte_Logo.png" , width=px, height="40px">
+        </a>
+        <a href="#nasa">
+          <img src="https://assets.stickpng.com/images/58429400a6515b1e0ad75acc.png" , width=px, height="40px">
+        </a>
+        <a href="#ibm">
+          <img src="https://www.freepnglogos.com/uploads/ibm-logo-png/ibm-logo-ibm-logos-download-12.png" , width=px, height="40px">
+        </a>
+        <a href="#airbus">
+          <img src="https://logos-world.net/wp-content/uploads/2020/03/Airbus-Logo.png" , width=px, height="40px">
+        </a>
+        <a href="#telstra">
+          <img src="https://www.iicom.org/wp-content/uploads/new-Telstra-logo.png" , width=px, height="40px">
+        </a>
+        <a href="#fujitsu">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fujitsu-Logo.svg/1280px-Fujitsu-Logo.svg.png" , width=px, height="40px">
+        </a>
+        <a href="#google">
+          <img src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" , width=px, height="40px">
+        </a>
+      </h3>
+       <br>
+        <hr>
+      <br><br>
+      </div>
+
+      <div class="container ">
+        <h1 class="mt-3">Need something done?</h1>
+
+        <div class="row mb-4">
+          <div class="col-sm mx-3 px-2 py-3  ">
+
+            <div class="row">
+              <div class="row-sm ml-5">
+                <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/project/post-a-project.svg" alt="Post a job Icon" height="50" width="55">
+              </div>
+
+              <div class="">
+                <h5 class="my-3 ">Post a job</h5>
+                <br>
+
+              </div>
+
+              <p class="ml-3">It’s free and easy to post a job. Simply fill
+                in a title, description and budget and competitive bids come within minutes.</p>
+            </div>
+          </div>
+          <div class="col-sm mx-3 px-2 py-3  ">
+            <div class="row">
+              <div class="row-sm ml-3 pl-3">
+                <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/freelancer/work.svg" 
+                alt="Choose freelancers Icon" height="50" width="55" >
+              </div>
+
+              <div class="">
+                <h5 class="my-3 text-left ">Choose freelancers</h5>
+                <br>
+              </div>
+
+              <p class="ml-5">No job is too big or too small.
+                We've got freelancers for jobs of any size or budget, across 1800+ skills. No job is too complex. We can get it done!</p>
+            </div>
+          </div>
+          <div class="col-sm mx-3 px-2 py-3  ">
+            <div class="row">
+              <div class="row-sm ml-5 pl-3">
+                <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/payment/pay-safely.svg"
+                 alt="Pay safely Icon" height="50" width="55" >
+              </div>
+
+              <div class="">
+                <h5 class="my-3 text-left ">Pay safely</h5>
+                <br>
+              </div>
+
+              <p class="ml-5">Only pay for work when it has been
+                completed and you're 100% satisfied with the quality using our milestone payment system.</p>
+            </div>
+          </div>
+          <div class="col-sm mx-3 px-2 py-3  ">
+            <div class="row">
+              <div class="row-sm ml-4 pl-2">
+                <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/freelancer/about-me.svg"
+                 alt="We’re here to help Icon" height="50" width="55" >
+              </div>
+
+              <div class="">
+                <h5 class="my-3 text-left ">We're here to help </h5>
+                <br>
+              </div>
+
+              <p class="ml-5">Our talented team of recruiters can
+                help you find the best freelancer for the job and our technical co-pilots can even manage the project for you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+        <div class="container ">
+          <h1 class="mt-3">What's great about it?</h1>
+
+          <div class="row mb-4">
+            <div class="col-sm mx-3 px-2 py-3  ">
+
+              <div class="row">
+                <div class="row-sm ml-3 pl-3">
+                  <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/portfolio/browse-portfolios.svg" 
+                  alt="Browse portfolios Icon" height="50" width="55" >
+                </div>
+
+                <div class="">
+                  <h5 class="my-3 text-left ">Browse portofolios</h5>
+                  <br>
+
+                </div>
+
+                <p class="ml-5">Find professionals you can trust by browsing
+                  their samples of previous work and reading their profile reviews.</p>
+              </div>
+            </div>
+            <div class="col-sm mx-3 px-2 py-3  ">
+              <div class="row">
+                <div class="row-sm ml-5 pl-2">
+                  <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/quality-rewards/rank-higher.svg" 
+                  alt="Quality work Icon" height="50" width="55">
+                </div>
+
+                <div class="">
+                  <h5 class="my-3 text-left ">Fast bids</h5>
+                  <br>
+                </div>
+
+                <p class="ml-5">Receive obligation free quotes from our talented
+                  freelancers fast. 80% of projects get bid on within 60 seconds.</p>
+              </div>
+            </div>
+            <div class="col-sm mx-3 px-2 py-3  ">
+              <div class="row">
+                <div class="row-sm ml-5 pl-2">
+                  <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/bids/bids-alt.svg" 
+                  alt="Fast bids Icon" height="50" width="55" >
+                </div>
+
+                <div class="">
+                  <h5 class="my-3 text-left ">Quality work</h5>
+                  <br>
+                </div>
+
+                <p class="ml-5">Freelancer.com has by far the largest pool of quality freelancers
+                  globally- over 50 million to choose from.</p>
+              </div>
+            </div>
+            <div class="col-sm mx-3 px-2 py-3  ">
+              <div class="row">
+                <div class="row-sm ml-5">
+                  <img _ngcontent-webapp-c106="" class="ImageElement" src="https://www.f-cdn.com/assets/main/en/assets/illustrations/time/track-progress.svg" 
+                  alt="Track progress Icon" height="50" width="55" >
+                </div>
+
+                <div class="">
+                  <h5 class="my-3 text-left ">Track progress </h5>
+                  <br>
+                </div>
+
+                <p class="ml-5">Keep up-to-date and on-the-go with our time tracker,
+                  and mobile app. Always know what freelancers are up to.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br><hr><br><br>
+      <div class="container2">
+        <h1 class="mt-3">Make it Real with Freelancer.</h1>
+        <a>Get some Inspirations from 1800+ skills</a>
+        <div class="row mb-4">
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/logo-design-v2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+             
+            </div>
+            <h4 class="text-left"> Logo Design.
+            </h4>
+             <h4 class="text-left"> 
+               $30 USD in 1 day.</h4>
+            
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/package-design-1-v2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left"> Package Design.
+            </h4>
+             <h4 class="text-left"> 
+              $280 USD in 4 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/mobile-design-1-v2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left"> Mobile Design.
+            </h4>
+             <h4 class="text-left"> 
+              $600 USD in 4 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/wordpress-1.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left"> WordPress.
+            </h4>
+             <h4 class="text-left"> 
+              $45 USD in 1 day.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/logo-design-2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Logo Design.
+            </h4>
+             <h4 class="text-left"> 
+              $30 USD in 1 day.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-1.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Package Design.
+            </h4>
+             <h4 class="text-left"> 
+              $100 USD in 6 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-design-1.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left"> Mobile Design.
+             <h4 class="text-left"> 
+              $100 USD in 1 day.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/illustration-v2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Package Design.
+            </h4>
+             <h4 class="text-left"> 
+              $155 USD in 2 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/wordpress-2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">WordPress.
+            </h4>
+             <h4 class="text-left"> 
+              $150 USD in 18 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/package-design-4.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Package Design.
+            </h4>
+             <h4 class="text-left"> 
+              $100 USD in 6 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/mobile-design-2-v2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Mobile Design.
+            </h4>
+             <h4 class="text-left"> 
+              $100 USD in 1 day.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/package-design-3.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Package Design.
+            </h4>
+             <h4 class="text-left"> 
+              $155 USD in 2 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/website-2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Website.
+            </h4>
+             <h4 class="text-left"> 
+              $200 USD in 9 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/3d-modeling.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">3D Modeling.
+            </h4>
+             <h4 class="text-left"> 
+              $110 USD in 28 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/logo-design-3.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Logo Design.
+            </h4>
+             <h4 class="text-left"> 
+              $20 USD in 3 days.</h4>
+          </div>
+          <div class="col-sm mx-0 px-2 py-3  ">
+            <div class="img-hover-zoom">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/crowd-favorite-redesign/graphic-design-2.jpg?image-optimizer=force&width=260" alt="This zooms-in really well and smooth">
+            </div>
+            <h4 class="text-left">Graphic Design.
+            </h4>
+             <h4 class="text-left"> 
+              $60 USD in 10 days.</h4>
+          </div>
+      </div>
+      <br>
+      <div class="hirebutton mx-5 px-5 text-center">
+        <button class="button2" type="button"><span></span>View More Projects</button>
+        
+      </div>
+      <br><br>
+      <hr>
+      <br><br>
+      <div class="container3">
+        <h1>Get work done in over 1800 different categories</h1>
+        <br><br>
+        <table>
+          <tr>
+            <th>
+             <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-website-design-v2.svg", width="40px"> 
+            <button class="button3" type="button">Website Design</button>
+            </th>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-translation.svg", width="40px"> 
+             <button class="button3" type="button">Research Writing</button>
+             </th>
+             <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-python.svg", width="40px"> 
+             <button class="button3" type="button">Python</button>
+             </th>
+             <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-excel.svg", width="40px"> 
+             <button class="button3" type="button">Excel</button>
+             </th>
+             <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-photoshop-v2.svg", width="40px"> 
+             <button class="button3" type="button">Photoshop</button>
+             </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-mobile-apps-v2.svg", width="40px"> 
+             <button class="button3" type="button">Mobile Apps</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research.svg", width="40px"> 
+              <button class="button3" type="button">Research</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-wordpress.svg", width="40px"> 
+              <button class="button3" type="button">Wordpress</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-ghost-writing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Ghostwriting</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-technical-writing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Technical Writing</button>
+              </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-android-v2.svg", width="40px"> 
+             <button class="button3" type="button">Android Apps</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-research-writing.svg", width="40px"> 
+              <button class="button3" type="button">Research Writing</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-search.svg", width="40px"> 
+              <button class="button3" type="button">Web Search</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-copy-writing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Copywriting</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-blogging.svg", width="40px"> 
+              <button class="button3" type="button">Blogging</button>
+              </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-iphone-apps-v2.svg", width="40px"> 
+             <button class="button3" type="button">Iphone Apps</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-article-writing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Article Writing</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-finance-v2.svg", width="40px"> 
+              <button class="button3" type="button">Finance</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-accounting-v2.svg", width="40px"> 
+              <button class="button3" type="button">Accounting</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-internet-marketing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Internet Marketing</button>
+              </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-software-architecture.svg", width="40px"> 
+             <button class="button3" type="button">Software Architecture</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-web-scraping.svg", width="40px"> 
+              <button class="button3" type="button">Web Scraping</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-legal-v2.svg", width="40px"> 
+              <button class="button3" type="button">Legal</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-mysql.svg", width="40px"> 
+              <button class="button3" type="button">MySQL</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-ecommerce.svg", width="40px"> 
+              <button class="button3" type="button">eCommerce</button>
+              </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-graphic-design-v2.svg", width="40px"> 
+             <button class="button3" type="button">Graphic Design</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-html.svg", width="40px"> 
+              <button class="button3" type="button">HTML</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-linux-v2.svg", width="40px"> 
+              <button class="button3" type="button">Linux</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-banner-design-v2.svg", width="40px"> 
+              <button class="button3" type="button">Banner Design</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-data-entry-v2.svg", width="40px"> 
+              <button class="button3" type="button">Data Entry</button>
+              </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-logo-design-v2.svg", width="40px"> 
+             <button class="button3" type="button">Logo Design</button>
+             </th>
+             <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-css.svg", width="40px"> 
+              <button class="button3" type="button">CSS</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-manufacturing-v2.svg", width="40px"> 
+              <button class="button3" type="button">Manufacturing</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-illustration.svg", width="40px"> 
+              <button class="button3" type="button">Illustration</button>
+              </th>
+              <th>
+               <img src="https://www.f-cdn.com/assets/main/en/assets/home/hire-categories/redesign/hire-link-building.svg", width="40px"> 
+              <button class="button3" type="button">Link Building</button>
+              </th>
+          </tr>
+          
+     
+          
+        </table>
+        <br><br><br>
+        
+      </div>
+
+    </section>
+    
+    <section class="freelancer">
+      <table class="center">
+            <th class="section1">
+              <h1>Freelancer API.</h1>
+              <h2>50 million professionals on demand</h2>
+              <p class="text-left  ">Why hire people when you can simply integrate our talented cloud workforce instead?</p>
+                <button class="button4" type="button"><span></span>View Documentation</button>
+            </th>
+            <th class="section2">
+              <h1>Freelancer Enterprise.</h1>
+              <h2>Company budget? Get more done for less</h2>
+              <p class="text-left">Use our workforce of 50 million to help your business achieve more.</p>
+           
+                <button class="button4" type="button"><span></span>Contact Us</button>
+            </th>
+        </tr>
+      </table>
+      <br><br><br>
+    </section>
+
+    <section class="closing">
+      <br>
+      <div class ="row">
+        <div class="column">
+     
+      <table class="center">
+        <tr style="color:white", >
+          <th>
+            <a class="navbar-brand ", style="color: white !important;" href="#">
+              <h2 class="px-3">maalf</h2>
+            </a>
+
+          </th>
+          <th class="closingth">Freelancer</th>
+          <th class="closingth">About</th>
+          <th class="closingth"> Terms</th>
+          <th class="closingth"> Partners</th>
+       
+        </tr>
+        <tr>
+          <th>
+            <svg width="25px"  viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+              <g stroke="none" stroke-width="1" fill-rule="evenodd" style="fill: white">
+                  <polygon fill="none" opacity="0" points="2 2 22 2 22 22 2 22"></polygon>
+                  <path d="M11.99,2 C6.47,2 2,6.48 2,12 C2,17.52 6.47,22 11.99,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 11.99,2 Z M18.92,8 L15.97,8 C15.65,6.75 15.19,5.55 14.59,4.44 C16.43,5.07 17.96,6.35 18.92,8 Z M12,4.04 C12.83,5.24 13.48,6.57 13.91,8 L10.09,8 C10.52,6.57 11.17,5.24 12,4.04 Z M4.26,14 C4.1,13.36 4,12.69 4,12 C4,11.31 4.1,10.64 4.26,10 L7.64,10 C7.56,10.66 7.5,11.32 7.5,12 C7.5,12.68 7.56,13.34 7.64,14 L4.26,14 Z M5.08,16 L8.03,16 C8.35,17.25 8.81,18.45 9.41,19.56 C7.57,18.93 6.04,17.66 5.08,16 Z M8.03,8 L5.08,8 C6.04,6.34 7.57,5.07 9.41,4.44 C8.81,5.55 8.35,6.75 8.03,8 Z M12,19.96 C11.17,18.76 10.52,17.43 10.09,16 L13.91,16 C13.48,17.43 12.83,18.76 12,19.96 Z M14.34,14 L9.66,14 C9.57,13.34 9.5,12.68 9.5,12 C9.5,11.32 9.57,10.65 9.66,10 L14.34,10 C14.43,10.65 14.5,11.32 14.5,12 C14.5,12.68 14.43,13.34 14.34,14 Z M14.59,19.56 C15.19,18.45 15.65,17.25 15.97,16 L18.92,16 C17.96,17.65 16.43,18.93 14.59,19.56 Z M16.36,14 C16.44,13.34 16.5,12.68 16.5,12 C16.5,11.32 16.44,10.66 16.36,10 L19.74,10 C19.9,10.64 20,11.31 20,12 C20,12.69 19.9,13.36 19.74,14 L16.36,14 Z"></path>
+              </g>
+          </svg>
+           <button class="button5" type="button">Us (International) / English</button>
+           </th>
+          <th>
+
+          
+          <button class="button5 " type="button">Categories</button>
+          </th>
+          <th>
+           
+           <button class="button5 " type="button">About us</button>
+           </th>
+           <th>
+            
+           <button class="button5" type="button">Privacy Policy</button>
+           </th>
+           <th>
+            
+           <button class="button5" type="button">Escrow.com</button>
+           </th>
+          
+           
+          
+        </tr>
+        <tr>
+          <th>
+            
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Projects</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">How it Works</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Terms and Conditions</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Loadshift</button>
+             </th>
+           
+        </tr>
+        <tr>
+          <th>
+            <svg  width="25px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
+              <g stroke="none" stroke-width="1" fill-rule="evenodd" style="fill: white">
+                  <polygon fill="none" opacity="0" points="2 2 22 2 22 22 2 22"></polygon>
+                  <path d="M12,2 C6.486,2 2,6.487 2,12 C2,17.515 6.486,22 12,22 C17.514,22 22,17.515 22,12 C22,6.487 17.514,2 12,2 Z M12,18.25 C11.31,18.25 10.75,17.69 10.75,17 C10.75,16.31 11.31,15.75 12,15.75 C12.69,15.75 13.25,16.31 13.25,17 C13.25,17.69 12.69,18.25 12,18.25 Z M13,13.875 L13,15 L11,15 L11,12 L12,12 C13.104,12 14,11.103 14,10 C14,8.896 13.104,8 12,8 C10.896,8 10,8.896 10,10 L8,10 C8,7.795 9.795,6 12,6 C14.205,6 16,7.795 16,10 C16,11.86 14.723,13.43 13,13.875 Z"></path>
+              </g>
+          </svg>
+           <button class="button5" type="button">Help & Support</button>
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Contents</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">Careers</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Copyright Policy</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Freightlancer</button>
+             </th>
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Freelancers</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">Security</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Code of Conduct</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Warrior Forum</button>
+             </th>
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Enterprise</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">Investor</button>
+             </th>
+             <th>
+              
+             <button class="button5" type="button">Fees and Charges</button>
+             </th>
+           
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Membership</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">Sitemap</button>
+             </th>
+             <th>
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Preferred Freelancer Programs</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">Stories</button>
+             </th>
+             <th>
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Project Management</button>
+            </th>
+            <th>
+             
+             <button class="button5 " type="button">News</button>
+             </th>
+             <th>
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Local Jobs</button>
+            </th>
+        
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Photo Anywhere</button>
+            </th>
+        
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Showcase</button>
+            </th>
+        
+        </tr>
+        <tr>
+          <th>
+            
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">API for Developers</button>
+            </th>
+        
+        </tr>
+        <tr>
+          <th>
+
+
+          </th>
+          <th>
+          
+            <button class="button5 " type="button">Get Verified</button>
+            </th>
+        
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+
+    
+      <table style="margin-left: 50px;">
+    
+        <tr>
+          <th style="color: white; padding-top: 17px;">
+            Apps
+          </th>
+         
+        </tr>
+        <tr>
+          <th style="padding-top: 15px;">
+            <button class="button6">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg">
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th style="padding-top: 15px;">
+            <button class="button6">
+              <img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg">
+            </button>
+          </th>
+        </tr>
+      </table>
+    </div>
+      </div>
+      <br>
+    </section>
+  </body>
